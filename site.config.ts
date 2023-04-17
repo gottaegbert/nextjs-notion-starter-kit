@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'egbertblog',
-  domain: 'siyublog.vercel.app',
+  domain: 'jj.vercel.app',
   author: 'Siyu Hu',
 
   // open graph metadata (optional)
