@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-
 import cs from 'classnames'
 import { PageBlock } from 'notion-types'
 import { formatDate, getBlockTitle, getPageProperty } from 'notion-utils'
@@ -11,6 +10,8 @@ import BodyClassName from 'react-body-classname'
 import { NotionRenderer } from 'react-notion-x'
 import TweetEmbed from 'react-tweet-embed'
 import { useSearchParam } from 'react-use'
+// import styled from 'styled-components';
+import { SplineD } from './Threefiber'
 
 import * as config from '@/lib/config'
 import * as types from '@/lib/types'
@@ -27,6 +28,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import { GitHubShareButton } from './GitHubShareButton'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -100,6 +102,7 @@ const Modal = dynamic(
 const Tweet = ({ id }: { id: string }) => {
   return <TweetEmbed tweetId={id} />
 }
+
 
 const propertyLastEditedTimeValue = (
   { block, pageHeader },
@@ -242,8 +245,12 @@ export const NotionPage: React.FC<types.PageProps> = ({
     getPageProperty<string>('Description', block, recordMap) ||
     config.description
 
+
+
+
   return (
     <>
+
       <PageHead
         pageId={pageId}
         site={site}
@@ -252,9 +259,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
         image={socialImage}
         url={canonicalPageUrl}
       />
-
       {isLiteMode && <BodyClassName className='notion-lite' />}
+
       {isDarkMode && <BodyClassName className='dark-mode' />}
+      {/* <SplineD /> */}
 
       <NotionRenderer
         bodyClassName={cs(
