@@ -169,6 +169,14 @@
 .notion-title {
   display: block;
   text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-size: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+  .notion-title {
+   font-size: 100px;
+  }
 }
 
 .notion-collection-row {
