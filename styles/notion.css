@@ -7,6 +7,8 @@
  * places to add some flare.
  */
 
+
+
 .notion {
   --notion-max-width: 720px;
   --notion-header-height: 54px;
@@ -66,6 +68,7 @@
 .notion-gallery-grid .notion-page-title-text {
   font-size: 2em;
   white-space: unset;
+
 }
 
 .notion-gallery-grid .notion-collection-card-property {
@@ -78,25 +81,37 @@
 }
 
 .notion-collection-card {
-  border-radius: 16px;
+  border-radius: 2px;
   box-shadow: none;
 }
 
 .notion-collection-card-cover img {
-  border-radius: 16px;
+  border-radius: 2px;
+  width: 100%;
+  height: 0%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.notion-collection-card-cover img:hover {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .notion-collection-card {
   overflow: visible;
 }
 
+
 .notion-collection-card-cover {
-  border-radius: 16px;
+  border-radius: 2px;
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
 
 .notion-collection-card-cover {
   border-bottom: 0 none;
+
   transition: filter 150ms linear;
   filter: none;
 }
@@ -170,12 +185,12 @@
   display: block;
   text-align: center;
   font-family: "Cormorant Upright", serif;
-  font-size: 300px;
+  font-size: 64px;
 }
 
 @media only screen and (max-width: 900px) {
   .notion-title {
-   font-size: 100px;
+   font-size: 40px;
   }
 }
 
