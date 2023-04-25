@@ -11,7 +11,7 @@ import { NotionRenderer } from 'react-notion-x'
 import TweetEmbed from 'react-tweet-embed'
 import { useSearchParam } from 'react-use'
 // import styled from 'styled-components';
-import { SplineD } from './Threefiber'
+// import { SplineD } from './Threefiber'
 
 import * as config from '@/lib/config'
 import * as types from '@/lib/types'
@@ -28,7 +28,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
-import { GitHubShareButton } from './GitHubShareButton'
+// import { GitHubShareButton } from './GitHubShareButton'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
