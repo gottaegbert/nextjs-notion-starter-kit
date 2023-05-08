@@ -206,7 +206,46 @@
   display: flex;
   justify-content: center;
 }
+.notion-collection-view-dropdown {
+  cursor: pointer;
+  padding: 6px 8px;
+  border: 0 none;
+  border-radius: 3px;
+  transition: background 120ms ease-in 0s;
+  background: transparent;
+}
 
+.notion-collection-view-dropdown:hover {
+  background: var(--bg-color-0);
+}
+
+.notion-collection-view-dropdown-icon {
+  position: relative;
+  top: 2px;
+  margin-left: 4px;
+}
+
+.notion-collection-view-type {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.notion-collection-view-type-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  /* fill: var(--fg-color); */
+  fill: rgba(55, 53, 47);
+  margin-right: 6px;
+}
+
+.notion-collection-view-type-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--fg-color);
+}
 .notion-collection-row-value {
   display: flex;
   align-items: center;

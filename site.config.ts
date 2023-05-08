@@ -9,7 +9,7 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'egbertblog',
+  name: 'antioch',
   domain: 'antioch.vercel.app',
   author: 'JJ',
 
